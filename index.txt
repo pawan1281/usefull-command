@@ -1,0 +1,11 @@
+kubectl config get-contexts
+kubectl config use-context minikube
+kubectl version
+kubectl cluster-info
+kubectl get nodes
+kubectl get pods
+kubectl get all
+kubectl describe pod
+kubectl get events --sort-by=.metadata.creationTimestamp
+kubectl api-resources # kubectl 1.11+
+kubectl api-versions
