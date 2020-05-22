@@ -36,6 +36,7 @@ kubectl delete service web-server
 kubectl delete deployment web-server
 kubectl scale deployment web-server --replicas=4
 kubectl delete pod web-server
+kubectl exec -it ID
 
 
 
