@@ -9,3 +9,33 @@ kubectl describe pod
 kubectl get events --sort-by=.metadata.creationTimestamp
 kubectl api-resources # kubectl 1.11+
 kubectl api-versions
+
+kubectl get cs
+kubectl get nodes
+kubectl get nodes -o wide
+kubectl describe node ID
+
+kubectl get deployments
+kubectl get service
+kubectl get service -o wide
+
+kubectl get pod 
+kubectl get pod -o wide
+kubectl describe pod ID
+
+kubectl run web-server --image=nginx
+kubectl run web-server --image=nginx --port 80
+kubectl run web-server --image=nginx --port 80 --replicas=4
+
+kubectl expose deployment web-server --type NodePort 
+kubectl expose deployment web-server --type NodePort --port 80
+kubectl expose deployment web-server --type ClusterIP 
+kubectl expose deployment web-server --type LoadBalancer
+
+kubectl delete service web-server
+kubectl delete deployment web-server
+kubectl scale deployment web-server --replicas=4
+kubectl delete pod web-server
+
+
+
