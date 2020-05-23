@@ -40,5 +40,22 @@ kubectl scale deployment web-server --replicas=4
 kubectl delete pod web-server
 kubectl exec -it ID
 
+#NAMESPACE
+kubectl get ns 
+kubectl create namespace azure
+kubectl run --namespace=azure dev --image=nginx
+kubectl run dev --image=nginx --namespace=azure
+kubectl delete deployment dev --namespace=azure
+kubectl get pod --namespace=azure
+kubectl get --namespace=azure pod
+kubectl -n azure get pods
+kubectl -n azure get all
+kubectl get pod -n azure
+kubectl get all -n azure
+kubectl -n azure run dev --image=nginx
+kubectl -n azure delete deployment dev
+
+
+
 
 
