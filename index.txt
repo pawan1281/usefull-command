@@ -1,3 +1,5 @@
+az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+
 kubectl config get-contexts
 kubectl config use-context minikube
 kubectl version
